@@ -2,6 +2,9 @@
 Creator: Maija Lehtosaari
 Date: 27.02.2024
 
+Video link to the project:
+https://youtu.be/MNwF3Rqx0As
+
 How to run the project:
 The project is hosted using GitHub pages. My page can be accessed using:
 https://maija0.github.io
