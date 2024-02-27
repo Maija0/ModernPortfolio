@@ -7,7 +7,7 @@ https://youtu.be/MNwF3Rqx0As
 
 How to run the project:
 The project is hosted using GitHub pages. My page can be accessed using:
-https://maija0.github.io
+https://maija0.github.io/
 
 Instructions on usage:
 The website has similar style to the example project. 
