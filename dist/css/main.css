@@ -1,3 +1,15 @@
+.home-icons {
+  margin-top: 2rem;
+  transition: opacity 2s ease; }
+  .home-icons a {
+    padding: 0.4rem; }
+    .home-icons a:hover {
+      color: #eece1a;
+      transition: all 0.5s ease-out; }
+  .home-icons.hide {
+    opacity: 0;
+    pointer-events: none; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -9,7 +21,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,14 +52,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #bb6621;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #d17225;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -55,9 +67,17 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait5.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
+    .menu-branding .icons {
+      margin-top: 1rem;
+      margin-left: 0.1rem; }
+      .menu-branding .icons a {
+        padding: 0.4rem; }
+        .menu-branding .icons a:hover {
+          color: #eece1a;
+          transition: all 0.5s ease-out; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -72,7 +92,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -94,14 +114,14 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #d17225;
+  color: #000;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1,5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -112,17 +132,49 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      opacity: 60%;
+      background: rgba(209, 114, 37, 0.9); }
+  body#AbtBg-img {
+    background: url(../img/landscape3.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#AbtBg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 60%;
+      background: rgba(209, 114, 37, 0.9); }
+  body#WrkBg-img {
+    background: url(../img/landscape4.png);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#WrkBg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 60%;
+      background: rgba(209, 114, 37, 0.9); }
 
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: -4px -4px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(217, 119, 39, 0.3);
+    width: 36%; }
 
 a {
   color: #fff;
@@ -139,13 +191,6 @@ header {
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -171,7 +216,7 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #db7f34;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
@@ -220,23 +265,27 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #fefaf7;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
+  background: #a65a1d;
+  color: #000;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .home-icons {
+    margin-left: 78%; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .home-icons {
+    margin-left: 67%; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -268,10 +317,16 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .home-icons {
+    margin-left: 50%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  main#home h2 {
+    margin-left: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .icons {
+    margin-left: 40%; } }

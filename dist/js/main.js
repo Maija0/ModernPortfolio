@@ -1,4 +1,5 @@
 // Select DOM Items
+const homeIcons = document.querySelectorAll('.home-icons');
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
@@ -17,6 +18,7 @@ function toggleMenu() {
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
         navItems.forEach(item => item.classList.add('show'));
+        homeIcons.forEach(item => item.classList.add('hide'));
 
         // set menu state
         showMenu = true;
@@ -26,7 +28,7 @@ function toggleMenu() {
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
         navItems.forEach(item => item.classList.remove('show'));
-
+        homeIcons.forEach(item => item.classList.remove('hide'));
         // set menu state
         showMenu = false;        
     }

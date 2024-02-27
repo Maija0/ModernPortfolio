@@ -3,12 +3,20 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+    //resizing for icons
+    .home-icons {
+        margin-left: 78%;
+    }
     
 }
 // Desktops & laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+    //resizing for icons
+    .home-icons {
+        margin-left: 67%;
     }
 }
 // Tablets & small laptops
@@ -63,15 +71,26 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    //resizing for icons
+    .home-icons {
+        margin-left: 50%;
+    }
 }
 // Smartphones
 @include mediaSm {
     main#home h1 {
         margin-top: 10vh;
     }
+    main#home h2 {
+        margin-left: 10vh;
+    }
 
     .projects {
         grid-template-columns: 1fr;
+    }
+    //resizing for icons
+    .icons {
+        margin-left: 40%;
     }
 
 }

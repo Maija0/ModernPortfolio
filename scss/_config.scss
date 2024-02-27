@@ -1,7 +1,14 @@
-$primary-color: #444; // 444 fff, eece1a b, w, y
-$secondary-color: #eece1a; //eece1a
+$primary-color: #d17225; // 444 fff, eece1a b, w, y cc8a33 ca5b28
+$secondary-color: #eece1a; //eece1a 1194d1 3ce212
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
+$home-image: url(../img/background2.jpg); 
+//about image
+$show-about-image: true;
+$about-image: url(../img/landscape3.jpg);
+// work image
+$show-work-image: true;
+$work-image: url(../img/landscape4.png);
+
 $background-opacity: 0.9;
 
 @mixin easeOut  { //käytössä @include name
@@ -23,6 +30,45 @@ $background-opacity: 0.9;
                 width: 100%;
                 height: 100%;
                 z-index: -1;
+                opacity: 60%; //opacity for the cover
+                background: rgba($primary-color, $background-opacity);
+            }
+        }
+    }
+    @if $show-about-image {
+        &#AbtBg-img {
+            background: $about-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 60%; //opacity for the cover
+                background: rgba($primary-color, $background-opacity);
+            }
+        }
+    }
+    @if $show-work-image {
+        &#WrkBg-img {
+            background: $work-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 60%; //opacity for the cover
                 background: rgba($primary-color, $background-opacity);
             }
         }
