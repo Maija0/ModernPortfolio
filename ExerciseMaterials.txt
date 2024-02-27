@@ -1,0 +1,14 @@
+Creator: Maija Lehtosaari
+Date: 27.02.2024
+
+All the materials I used to create the project:
+1. Traversy Media / example project videos 1-7
+
+2 w3schools for animation / picture transition
+https://www.w3schools.com/css/css3_animations.asp 
+
+3. Image compression through: https://www.img2go.com/compress-image
+
+4. WebFlow tutorials & articles for color ideas, combinations and style inspiration:
+https://webflow.com/blog/best-websites?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Global&utm_term=dsa-1729073415988___617245336996__&gad_source=1&gclid=CjwKCAiA_tuuBhAUEiwAvxkgTvwq2CFKUPTC_uQyOTtDRy_396PuusbzTjqiyRCtXOmbrJriFBo7oRoCgNsQAvD_BwE
+https://webflow.com/blog/best-color-combinations
