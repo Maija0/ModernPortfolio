@@ -37,9 +37,7 @@ $background-opacity: 0.9;
     }
     @if $show-about-image {
         &#AbtBg-img {
-            background: $about-image;
-            background-attachment: fixed;
-            background-size: cover;
+            position: relative;
 
             &:after {
                 content: '';
@@ -51,6 +49,15 @@ $background-opacity: 0.9;
                 z-index: -1;
                 opacity: 60%; //opacity for the cover
                 background: rgba($primary-color, $background-opacity);
+                //function to switch images
+                animation: changeImage 20s infinite;
+            }
+            
+            @keyframes changeImage {
+                0% { background-position: left; background-image: url('../img/background2.jpg');}
+                33% { background-position: left; background-image: url('../img/landscape3.jpg');}
+                66% { background-position: left; background-image: url('../img/landscape4.png');}
+                100% { background-position: left; background-image: url('../img/background2.jpg');}
             }
         }
     }

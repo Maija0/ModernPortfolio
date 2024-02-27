@@ -135,9 +135,7 @@ body {
       opacity: 60%;
       background: rgba(209, 114, 37, 0.9); }
   body#AbtBg-img {
-    background: url(../img/landscape3.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
+    position: relative; }
     body#AbtBg-img:after {
       content: '';
       position: absolute;
@@ -147,7 +145,22 @@ body {
       height: 100%;
       z-index: -1;
       opacity: 60%;
-      background: rgba(209, 114, 37, 0.9); }
+      background: rgba(209, 114, 37, 0.9);
+      animation: changeImage 20s infinite; }
+
+@keyframes changeImage {
+  0% {
+    background-position: left;
+    background-image: url("../img/background2.jpg"); }
+  33% {
+    background-position: left;
+    background-image: url("../img/landscape3.jpg"); }
+  66% {
+    background-position: left;
+    background-image: url("../img/landscape4.png"); }
+  100% {
+    background-position: left;
+    background-image: url("../img/background2.jpg"); } }
   body#WrkBg-img {
     background: url(../img/landscape4.png);
     background-attachment: fixed;
