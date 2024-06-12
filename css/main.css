@@ -4,7 +4,7 @@
   .home-icons a {
     padding: 0.4rem; }
     .home-icons a:hover {
-      color: #eece1a;
+      color: #A2D2FF;
       transition: all 0.5s ease-out; }
   .home-icons.hide {
     opacity: 0;
@@ -52,14 +52,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #bb6621;
+    background: #ffafcd;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #d17225;
+    background: #FFC8DD;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -69,14 +69,14 @@
       height: 250px;
       background: url("../img/portrait5.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #BDE0FE; }
     .menu-branding .icons {
       margin-top: 1rem;
       margin-left: 0.1rem; }
       .menu-branding .icons a {
         padding: 0.4rem; }
         .menu-branding .icons a:hover {
-          color: #eece1a;
+          color: #A2D2FF;
           transition: all 0.5s ease-out; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -84,7 +84,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #BDE0FE; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -96,7 +96,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #BDE0FE; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -114,14 +114,14 @@
   box-sizing: border-box; }
 
 body {
-  background: #d17225;
+  background: #FFC8DD;
   color: #000;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1,5; }
   body#bg-img {
-    background: url(../img/background2.jpg);
+    background: url(../img/pastel1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -133,9 +133,33 @@ body {
       height: 100%;
       z-index: -1;
       opacity: 60%;
-      background: rgba(209, 114, 37, 0.9); }
+      background: rgba(255, 200, 221, 0.5); }
   body#AbtBg-img {
-    position: relative; }
+    background: url(../img/pastel2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    /*
+            @keyframes changeImage {
+                0% {
+                    background-position: left;
+                    background-image: url('../img/pastel2.jpg');
+                }
+
+                33% {
+                    background-position: left;
+                    background-image: url('../img/pastel1.jpg');
+                }
+
+                66% {
+                    background-position: left;
+                    background-image: url('../img/pastel2.png');
+                }
+
+                100% {
+                    background-position: left;
+                    background-image: url('../img/background2.jpg');
+                }
+            } */ }
     body#AbtBg-img:after {
       content: '';
       position: absolute;
@@ -145,24 +169,9 @@ body {
       height: 100%;
       z-index: -1;
       opacity: 60%;
-      background: rgba(209, 114, 37, 0.9);
-      animation: changeImage 20s infinite; }
-
-@keyframes changeImage {
-  0% {
-    background-position: left;
-    background-image: url("../img/background2.jpg"); }
-  33% {
-    background-position: left;
-    background-image: url("../img/landscape3.jpg"); }
-  66% {
-    background-position: left;
-    background-image: url("../img/landscape4.png"); }
-  100% {
-    background-position: left;
-    background-image: url("../img/background2.jpg"); } }
+      background: rgba(255, 200, 221, 0.5); }
   body#WrkBg-img {
-    background: url(../img/landscape4.png);
+    background: url(../img/pastel2.png);
     background-attachment: fixed;
     background-size: cover; }
     body#WrkBg-img:after {
@@ -174,7 +183,7 @@ body {
       height: 100%;
       z-index: -1;
       opacity: 60%;
-      background: rgba(209, 114, 37, 0.9); }
+      background: rgba(255, 200, 221, 0.5); }
 
 h1, h2, h3 {
   margin: 0;
@@ -182,11 +191,11 @@ h1, h2, h3 {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem;
     color: #fff;
-    text-shadow: -4px -4px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    text-shadow: -1px -1px 0 #ffffff,   1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(217, 119, 39, 0.3);
+    background: rgba(255, 210, 227, 0.3);
     width: 36%; }
 
 a {
@@ -199,7 +208,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #BDE0FE; }
 
 main {
   padding: 4rem;
@@ -218,7 +227,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #BDE0FE 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -229,9 +238,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #db7f34;
+    background: #ffe2ed;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #BDE0FE 5px solid; }
 
 .projects {
   display: grid;
@@ -242,7 +251,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #BDE0FE;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -259,7 +268,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #BDE0FE;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -270,21 +279,21 @@ main {
   border: 0;
   margin-bottom: 0.3; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #BDE0FE;
     color: #000; }
 
 .btn-dark {
-  background: black;
+  background: #c8004c;
   color: #fff; }
 
 .btn-light {
-  background: #fefaf7;
+  background: white;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #a65a1d;
+  background: #ff95bd;
   color: #000;
   height: 60px; }
 
